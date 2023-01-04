@@ -310,6 +310,34 @@
             </a>
           </div>
         </div>
+        <div>
+          <p class="footer-paragraph">Zapisz się do newslettera</p>
+          <div class="footer-icons-position">
+            <form
+              name="footer-news-letter"
+              autocomplete="on"
+              method="POST"
+              action="javascript:void(0);"
+              validate
+            >
+              <input
+                class="news-letter-email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                title="Podaj adres e-mail"
+                pattern="
+                ^(?P<local>[a-zA-Z0-9.!#$%&'*+/=?^_\x60{|}~-]+)@(?P<domain>[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$"
+                required
+              />
+              <button class="news-letter-submit" type="submit">
+                Zapisz się<svg class="news-letter-submit-svg" width="24" height="24">
+                  <use href="images/decorations/icons.svg#icon-arrow_send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
