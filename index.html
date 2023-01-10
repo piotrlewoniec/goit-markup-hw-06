@@ -39,7 +39,10 @@
               <li class="navigation-position-between">
                 <a class="navigation links_focus_settings" href="portfolio.html">Portfolio</a>
               </li>
-              <li><a class="navigation links_focus_settings" href="kontakt.html">Kontakt</a></li>
+              <!--ToDo LINK kontakt.html -->
+              <li>
+                <a class="navigation links_focus_settings" href="#">Kontakt</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -84,7 +87,7 @@
                 <use href="images/decorations/icons.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="header-three">LOREM IPSUM</h3>
+            <h3 class="header-three header-three-dist">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
@@ -96,7 +99,7 @@
                 <use href="images/decorations/icons.svg#icon-clock"></use>
               </svg>
             </div>
-            <h3 class="header-three">LOREM IPSUM</h3>
+            <h3 class="header-three header-three-dist">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
@@ -108,7 +111,7 @@
                 <use href="images/decorations/icons.svg#icon-diagram"></use>
               </svg>
             </div>
-            <h3 class="header-three">LOREM IPSUM</h3>
+            <h3 class="header-three header-three-dist">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
@@ -120,7 +123,7 @@
                 <use href="images/decorations/icons.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3 class="header-three">LOREM IPSUM</h3>
+            <h3 class="header-three header-three-dist">LOREM IPSUM</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
@@ -393,13 +396,8 @@
         <div>
           <p class="footer-paragraph">Zapisz się do newslettera</p>
           <div class="footer-icons-position">
-            <form
-              name="footer-news-letter"
-              autocomplete="on"
-              method="POST"
-              action="javascript:void(0);"
-              validate
-            >
+            <form name="footer-news-letter" autocomplete="on" method="POST" validate>
+              <!-- action="javascript:void(0);" -->
               <input
                 class="news-letter-email"
                 type="email"
@@ -430,13 +428,8 @@
         </button>
         <div class="modal-container">
           <p class="modal-paragraph">Zostaw swoje dane w formularzu poniżej</p>
-          <form
-            name="zamow_usluge"
-            autocomplete="on"
-            method="POST"
-            action="javascript:void(0);"
-            validate
-          >
+          <form name="zamow_usluge" autocomplete="on" method="POST" validate>
+            <!-- action="javascript:void(0);" -->
             <label class="modal-label"
               >Imię
               <input
@@ -445,13 +438,13 @@
                 name="username"
                 minlength="2"
                 maxlength="50"
-                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                title="Podaj imię i nazwisko"
+                pattern="^[a-zA-Z]+$"
+                title="Podaj imię"
                 autocomplete="name"
                 placeholder=" "
                 required
-              /><svg class="modal-person-black" width="12" height="12">
-                <use href="images/decorations/icons_modal2_opt.svg#icon-person-black1"></use>
+              /><svg class="modal-svg-pos" width="12" height="12">
+                <use href="images/decorations/icons.svg#icon-person-black1"></use>
               </svg>
             </label>
 
@@ -462,8 +455,8 @@
                 type="tel"
                 name="phone_number"
                 title="Wprowadź numer telefonu opcjonalnie"
-              /><svg class="modal-phone-black" width="13" height="13">
-                <use href="images/decorations/icons_modal2_opt.svg#icon-phone-black1"></use>
+              /><svg class="modal-svg-pos" width="13" height="13">
+                <use href="images/decorations/icons.svg#icon-phone-black1"></use>
               </svg>
             </label>
 
@@ -478,7 +471,7 @@
                 ^(?P<local>[a-zA-Z0-9.!#$%&'*+/=?^_\x60{|}~-]+)@(?P<domain>[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$"
                 placeholder=" "
                 required
-              /><svg class="modal-email-black" width="15" height="12">
+              /><svg class="modal-svg-pos" width="15" height="12">
                 <use href="images/decorations/icons_modal2_opt.svg#icon-email-black1"></use>
               </svg>
             </label>
